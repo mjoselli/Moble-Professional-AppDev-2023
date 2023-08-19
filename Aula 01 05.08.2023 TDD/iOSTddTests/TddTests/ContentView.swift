@@ -28,7 +28,14 @@ struct ContentView: View {
             }, label: {
                 Text("Add")
             })
-            .accessibilityIdentifier("addButton")
+                .accessibilityIdentifier("addButton")
+            
+            Button(action: {
+                result = MinusCalculator.calculate(num1,num2)
+            }, label: {
+                Text("Minus")
+            })
+                .accessibilityIdentifier("minusButton")
             Text("Result: \(result)")
                 .accessibilityIdentifier("resultText")
         }

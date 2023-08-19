@@ -34,6 +34,12 @@
         android:layout_height="wrap_content"
         android:text="@string/add" />
 
+    <Button
+        android:id="@+id/subtractionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/subtraction_signal" />
+
     <TextView
         android:id="@+id/resultTextView"
         android:layout_width="match_parent"

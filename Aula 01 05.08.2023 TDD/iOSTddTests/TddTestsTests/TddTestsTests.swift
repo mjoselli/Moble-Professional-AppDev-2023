@@ -25,6 +25,7 @@ final class TddTestsTests: XCTestCase {
         // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
         // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
         XCTAssertEqual(SumCalculator.calculate(2, 4), 6, "Sum is not working")
+        XCTAssertEqual(MinusCalculator.calculate(2, 4), -2, "Minus is not working")
         
     }
     

@@ -22,7 +22,7 @@ final class TddTestsUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
+    func testAddButton() throws {
         // UI tests must launch the application that they test.
         //let app = XCUIApplication()
         //app.launch()
@@ -34,13 +34,34 @@ final class TddTestsUITests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
-    func testExample2() throws {
+    func testMinusButton() throws {
+        // UI tests must launch the application that they test.
+        //let app = XCUIApplication()
+        //app.launch()
+        let minusButton = app.buttons["minusButton"]
+        XCTAssert(minusButton.exists)
+        XCTAssertEqual(minusButton.label, "Minus")
+
+        
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    }
+    
+    func testAddButtonPressed() throws {
         app.textFields["num1TextField"].tap()
         app.textFields["num1TextField"].typeText("3")
         app.textFields["num2TextField"].tap()
         app.textFields["num2TextField"].typeText("4")
         app.buttons["addButton"].tap()
         XCTAssertEqual(app.staticTexts["resultText"].label,"Result: 7")
+    }
+    
+    func testMinusButtonPressed() throws {
+        app.textFields["num1TextField"].tap()
+        app.textFields["num1TextField"].typeText("3")
+        app.textFields["num2TextField"].tap()
+        app.textFields["num2TextField"].typeText("4")
+        app.buttons["minusButton"].tap()
+        XCTAssertEqual(app.staticTexts["resultText"].label,"Result: -1")
     }
 
     func testLaunchPerformance() throws {

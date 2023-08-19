@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F164D082A91268E001F75D3 /* MinusCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F164D072A91268E001F75D3 /* MinusCalculator.swift */; };
 		2F5FB4BB2A7C38B40091A2FF /* TddTestsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5FB4BA2A7C38B40091A2FF /* TddTestsApp.swift */; };
 		2F5FB4BD2A7C38B40091A2FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5FB4BC2A7C38B40091A2FF /* ContentView.swift */; };
 		2F5FB4BF2A7C38B70091A2FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F5FB4BE2A7C38B70091A2FF /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F164D072A91268E001F75D3 /* MinusCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinusCalculator.swift; sourceTree = "<group>"; };
 		2F5FB4B72A7C38B40091A2FF /* TddTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TddTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F5FB4BA2A7C38B40091A2FF /* TddTestsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TddTestsApp.swift; sourceTree = "<group>"; };
 		2F5FB4BC2A7C38B40091A2FF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				2F5FB4E42A7C3AF80091A2FF /* SumCalculator.swift */,
 				2F5FB4BE2A7C38B70091A2FF /* Assets.xcassets */,
 				2F5FB4C02A7C38B70091A2FF /* Preview Content */,
+				2F164D072A91268E001F75D3 /* MinusCalculator.swift */,
 			);
 			path = TddTests;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			files = (
 				2F5FB4E52A7C3AF80091A2FF /* SumCalculator.swift in Sources */,
 				2F5FB4BD2A7C38B40091A2FF /* ContentView.swift in Sources */,
+				2F164D082A91268E001F75D3 /* MinusCalculator.swift in Sources */,
 				2F5FB4BB2A7C38B40091A2FF /* TddTestsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

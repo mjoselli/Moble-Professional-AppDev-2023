@@ -3,4 +3,5 @@
     <string name="first_number">First Number</string>
     <string name="second_number">Second Number</string>
     <string name="add">+</string>
+    <string name="subtraction_signal">-</string>
 </resources>

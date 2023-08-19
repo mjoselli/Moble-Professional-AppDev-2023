@@ -29,6 +29,7 @@ class MainActivityTest {
         onView(withId(R.id.num1EditText)).check(matches(isDisplayed()))
         onView(withId(R.id.num2EditText)).check(matches(isDisplayed()))
         onView(withId(R.id.sumButton)).check(matches(isDisplayed()))
+        onView(withId(R.id.subtractionButton)).check(matches(isDisplayed()))
         onView(withId(R.id.resultTextView)).check(matches(isDisplayed()))
     }
     @Test
@@ -45,6 +46,20 @@ class MainActivityTest {
         onView(withId(R.id.sumButton)).perform(click())
         onView(withId(R.id.resultTextView)).check(matches(withText("5")))
 
+    }
+    @Test
+    fun testSubtraction(){
+        launch(MainActivity::class.java)
+        onView(withId(R.id.num1EditText)).perform(
+            clearText(),
+            typeText("3")
+        )
+        onView(withId(R.id.num2EditText)).perform(
+            clearText(),
+            typeText("2")
+        )
+        onView(withId(R.id.subtractionButton)).perform(click())
+        onView(withId(R.id.resultTextView)).check(matches(withText("1")))
     }
     @Before
     fun setUp(){
